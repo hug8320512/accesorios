@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: censter;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+
+}
+
+.content_logo img{
+    width:100px;
+}
+
+
+.menu-list li{
+    list-style: none; 
+    display: inline-block;   
+    padding:30px 30px;
+    color:#7a7a7a;
+}
+
+/* HERO */
+
+.background-image{
+    background-image: url("../img/banner-inicio.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-transparent{
+    background-color:   rgba(209, 219, 189, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.titulo h5{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+
+.titulo_principal h5{
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+    background-color:rgba(255, 255, 255, 0.4);
+    padding: 50px 90px;
+
+}
+
+.titulo_principal{
+  padding: 20px 20px;
+}
+
+.btn_hero a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    background-color: rgba(0,0,0,0.47);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn_hero{
+    margin-top: 25px;
+}
+
+.btn_hero a:hover{
+    background-color: black;
+}
+
+/* BANNER */
+
+.background-color-banner{
+   background-color:#3e606f;
+   height: 270px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.content_banner h5{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content_banner{
+    width: 35%;
+    
+}
+
+.content_banner p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#banner{
+    margin-top: 3px;
+}
+
+/* information */
+
+.details_information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information h5{
+    color:black;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.information h4{
+    color: #0e96dd;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.information p{
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.information{
+    padding: 50px 50px;
+}
+
+.content_footer{
+    background-color: #193441;
+    min-height: 250px;
+}
+.footer_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.details h3{
+    color: #7a7a7a;
+    margin-bottom: 13px;
+}
+.details p{
+    color:#7a7a7a;
+}
+
+.copy{
+    background-color: #193441;
+}
+
+.copy p{
+    color:#7a7a7a;
+    text-align: center;
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+
+@media(max-width: 767px){
+    .menu-list li{
+        
+        display: block;  
+        padding: 0 0; 
+    }
+    
+    .details_information{
+        flex-direction: column;
+        text-align: center;
+      
+    }
+
+    .information{
+        padding: 20px 0;
+    }
+
+    /* footer */
+
+    .footer_details{
+        flex-direction: column;
+    }
+
+    .content_footer{
+       
+        min-height: 400px;
+    }
+
+    .details h3{
+        color: white;
+        margin-bottom: 15px;
+    }
+    .details p{
+        color:white;
+        margin-bottom: 15px;
+    }
+
+    .copy p{
+        color:white;
+        text-align: center;
+    }
+
+    .content_banner{
+        width: 100%;
+        
+    }
+    
+
+
+} 
+
+@media(max-width: 480px){
+    .titulo_principal h5{
+       
+        
+        padding: 50px 50px;
+    
+    }
+
+    .content_banner h5{
+        font-size: 15px;
+    }
+
+    .content_banner p{
+        font-size: 14px;
+    }
+
+    .details h3{
+    font-size: 15px;
+    }
+    .details p{
+       font-size: 14px;
+    }
+    
+}
